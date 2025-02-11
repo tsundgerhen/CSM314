@@ -1,0 +1,23 @@
+plugins {
+    id 'java'
+    id "org.sonarqube" version "6.0.1.5171"
+}
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    implementation 'org.springframework.boot:spring-boot-starter:2.7.6' // Specify a version
+}
+
+jar {
+    archiveBaseName = 'MyProject'
+    archiveVersion = '1.0'
+}
+
+sonar {
+  properties {
+    property "sonar.projectKey", "tsundgerhen_CSM314"
+  }
+}

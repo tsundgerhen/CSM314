@@ -1,0 +1,14 @@
+language: java
+jdk:
+- openjdk11
+addons:
+  sonarcloud:
+    organization: tsundgerhen
+    token:
+      secure: "**************************"
+script:
+- "./gradlew clean build"
+- "./gradlew sonar"
+env:
+  global:
+    secure: BaMjOlEPsHE0zb9E+repBD3qgN7u+wkKbfrDN69UKRFJNaHjbC2OzmDQDkpIHRTj1bXJAmSM0tjpyz5nuEQSNgEqvVVj3ed1/dPnuS39KZXskDDi7ZzsJv9+jCl4/96OCJAt9BQoEAf1wRBBw/6/Fo2P21RX8V7ST5ADadpCRiuzo0E/7nDxdR41YKVY0wRwraQDsLPoDsBy0Z0aphqZbD/VCqM/IzbaLtWDvIMXuzHj7zJAImMZcjXcJZGhWFMjOofqdiheOgze+hlaMniH2nveGbqRZnvG7zVo5CLym0ioKbiwZSU/sMRVkRFbw4LkuLR7enysTmW+PXUFAYOhx+kNcPlH41LTGm7HW48pkyTc5Cot44P0XfQjHel0AZeHiZ0nwWN4L7qwdZ3yCtpJBFIualO8FFAnwTUY7yvtrDzRbJ11BlX8R7uIanwNsUZCldoJaJ3rtRN23CBxzm2hlOiipxKWPZnVzVWkoVIwjVVQrhUKssK5geJsarNlxXX+6OswrOkMblokAFV6zL8JSyqMY8s7xH3r43HiQEo8bEvyvbg4zEwoYPx5p41Fiu+LSnMYpU8V9aJC6EmDCrN3MhqXiMdJNeLeaDXePJ6t3uDSBff1pAk8FV2KWJXpR+gfIPnm2rSn8CgkVO2UTS/Bzv6y+4GUEwBR37VhqQG6uvg=
